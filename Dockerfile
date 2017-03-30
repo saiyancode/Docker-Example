@@ -5,6 +5,6 @@ RUN apt-get install -y python3-dev python3-crypto python3-pip python3-pil python
 RUN apt-get install -y libpq-dev libjpeg-dev
 COPY . /app
 WORKDIR /app
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 ENTRYPOINT ["python"]
 CMD ["app.py"]
