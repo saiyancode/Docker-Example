@@ -6,6 +6,6 @@ RUN apt-get -y install python3.5
 RUN apt-get install -y libpq-dev libjpeg-dev
 COPY . /app
 WORKDIR /app
-RUN python3.5 -m pip install -r requirements.txt
+RUN python3-m pip install -r requirements.txt
 ENTRYPOINT ["python"]
 CMD ["app.py"]
